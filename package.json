@@ -1,0 +1,15 @@
+{
+  "name": "elixir_book_club_landing_page",
+  "version": "1.0.0",
+  "description": "A landing page for Elixir Book Club",
+  "main": "index.js",
+  "repository": "git@github.com:kinson/elixir_book_club_landing_page.git",
+  "author": "kinson <swilkinsonhunter@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
