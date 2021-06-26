@@ -1,43 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Elixir Book Club</title>
-    <meta name="description" content="Elixir Book Club">
+    <meta name="description" content="Elixir Book Club" />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-    <nav class="flex items-center justify-between flex-wrap bg-blue-300 p-6 lg:px-14">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight">Elxir Book Club</span>
+  <body>
+    <nav
+      class="
+        flex
+        items-center
+        justify-between
+        flex-wrap
+        bg-blue-600
+        p-6
+        lg:px-14
+      "
+    >
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight"
+          >Elxir Book Club</span
+        >
+      </div>
+      <div class="lg:ml-auto lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
+          >
+            Discord
+          </a>
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
+          >
+            Get the Book
+          </a>
         </div>
-        <div class="lg:ml-auto lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header"
-                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                    Discord
-                </a>
-                <a href="#responsive-header"
-                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                    Get the Book
-                </a>
-            </div>
-        </div>
+      </div>
     </nav>
 
     <!-- Next Meeting -->
-    <div>
+    <!-- <div>
         <img src="https://raw.githubusercontent.com/kinson/elixir_book_club_landing_page/main/elx-book-club-logo.png" />
-    </div>
+    </div> -->
 
     <!-- Current Book and Chapter -->
-    <div></div>
+    <div class="container mx-auto">
+      <div class="flex flex-row items-center justify-center lg:mt-16">
+        <div class="mx-20">
+          <h3 class="text-sm text-gray-50 py-0 px-1 bg-indigo-500 inline-block rounded-sm">CURRENT BOOK</h3>
+          <img
+            class="max-h-52 my-8 shadow-md"
+            src="https://pragprog.com/titles/cmelixir/metaprogramming-elixir/cmelixir_hu6d5b8b63a4954cb696e89b39f929331b_1494046_500x0_resize_q75_box.jpg"
+          />
+          <p class="text-xl">Metaprogramming Elixir</p>
+          <p class="text-l text-gray-600">by Chris McCord</p>
+          <button type="button" class="px-8 py-3 my-6 bg-indigo-600 text-yellow-50 rounded-sm text-sm">Buy From PragProg</button>
+        </div>
+
+        <div class="mx-20">
+          <h3 class="text-sm text-gray-50 py-0 px-1 bg-indigo-500 inline-block rounded-sm" >NEXT MEETING</h3>
+
+          <img
+            class="max-h-52 my-8"
+            src="https://raw.githubusercontent.com/kinson/elixir_book_club_landing_page/main/elx-book-club-logo.png"
+          />
+
+          <p class="text-xl">Sunday, June 27th</p>
+          <p class="text-l text-gray-600">9 PM EDT (UTC -4)</p>
+
+          <button type="button" class="px-8 py-3 my-6 bg-indigo-600 text-yellow-50 rounded-sm text-sm">Join The Meeting</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Link to Discord -->
-    <div></div>
+    <div>
+        <p>Join us every other Sunday to talk about the most recent chapter in the book. Even if you are not caught up, feel free to join to get a preview of the next chapter or to generally converse about Elixir.</p>
 
-</body>
 
+        <p>Next Meeting</p>
+        <p>Chapter 4 of Metaprogramming Elixir</p>
+    </div>
+  </body>
 </html>
