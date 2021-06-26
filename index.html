@@ -3,34 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <title>Elixir Book Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Elixir Book Club" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,700&family=Overpass:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
+  <body class="font-overpass font-normal">
     <nav
       class="
         flex
         items-center
         justify-between
         flex-wrap
-        bg-blue-600
+        bg-steel-600
         p-6
         lg:px-14
       "
     >
       <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <span class="font-semibold text-xl tracking-tight"
+        <span class="font-semibold text-2xl tracking-tight"
           >Elxir Book Club</span
         >
       </div>
       <div class="lg:ml-auto lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
+        <div class="text-md lg:flex-grow">
           <a
             href="#responsive-header"
             class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
           >
-            Discord
+            Join Us On Discord
           </a>
           <a
             href="#responsive-header"
@@ -42,48 +50,122 @@
       </div>
     </nav>
 
-    <!-- Next Meeting -->
-    <!-- <div>
-        <img src="https://raw.githubusercontent.com/kinson/elixir_book_club_landing_page/main/elx-book-club-logo.png" />
-    </div> -->
+    <div class="container mx-auto mb-10">
+      <div>
+        <h1 class="text-center my-6 md:mb-8 md:mt-10 text-3xl md:text-5xl font-chivo text-steel-900">
+          Read &amp; Learn About Elixir
+        </h1>
+        <p class="w-10/12 md:w-8/12 lg:w-6/12 mx-auto">
+          Join us every other Sunday to talk about the most recent chapter in
+          the book. Even if you are not caught up on the reading, join to get a
+          preview of the next chapter or to generally converse about Elixir.
+        </p>
+      </div>
 
-    <!-- Current Book and Chapter -->
-    <div class="container mx-auto">
-      <div class="flex flex-row items-center justify-center lg:mt-16">
-        <div class="mx-20">
-          <h3 class="text-sm text-gray-50 py-0 px-1 bg-indigo-500 inline-block rounded-sm">CURRENT BOOK</h3>
+      <div
+        class="
+          flex flex-row flex-wrap-reverse
+          items-center
+          justify-center
+          my-6
+          lg:my-8
+        "
+      >
+        <div class="mx-10 md:mx-20 my-6 md:my-0 flex flex-col items-center">
+          <h3
+            class="
+              text-sm text-steel-700
+              py-0
+              px-1
+              bg-steel-200
+              inline-block
+              rounded-sm
+              font-thin
+            "
+          >
+            CURRENT BOOK
+          </h3>
+          <!-- #51AAE2 -->
           <img
-            class="max-h-52 my-8 shadow-md"
+            class="max-h-40 my-8 shadow-md"
             src="https://pragprog.com/titles/cmelixir/metaprogramming-elixir/cmelixir_hu6d5b8b63a4954cb696e89b39f929331b_1494046_500x0_resize_q75_box.jpg"
           />
           <p class="text-xl">Metaprogramming Elixir</p>
           <p class="text-l text-gray-600">by Chris McCord</p>
-          <button type="button" class="px-8 py-3 my-6 bg-indigo-600 text-yellow-50 rounded-sm text-sm">Buy From PragProg</button>
+          <button
+            type="button"
+            class="
+              px-8
+              py-3
+              my-6
+              bg-steel-700
+              text-yellow-50
+              rounded-sm
+              text-sm
+            "
+          >
+            Buy From PragProg
+          </button>
         </div>
 
-        <div class="mx-20">
-          <h3 class="text-sm text-gray-50 py-0 px-1 bg-indigo-500 inline-block rounded-sm" >NEXT MEETING</h3>
+        <div class="mx-10 md:mx-20 flex flex-col items-center">
+          <h3
+            class="
+              text-sm text-steel-700
+              py-0
+              px-1
+              bg-steel-200
+              inline-block
+              rounded-sm
+              font-thin
+            "
+          >
+            NEXT MEETING
+          </h3>
 
           <img
-            class="max-h-52 my-8"
+            class="max-h-40 my-8"
             src="https://raw.githubusercontent.com/kinson/elixir_book_club_landing_page/main/elx-book-club-logo.png"
           />
 
           <p class="text-xl">Sunday, June 27th</p>
           <p class="text-l text-gray-600">9 PM EDT (UTC -4)</p>
 
-          <button type="button" class="px-8 py-3 my-6 bg-indigo-600 text-yellow-50 rounded-sm text-sm">Join The Meeting</button>
+          <button
+            type="button"
+            class="
+              px-8
+              py-3
+              my-6
+              bg-steel-700
+              text-yellow-50
+              rounded-sm
+              text-sm
+            "
+          >
+            Join The Meeting
+          </button>
         </div>
       </div>
-    </div>
 
-    <!-- Link to Discord -->
-    <div>
-        <p>Join us every other Sunday to talk about the most recent chapter in the book. Even if you are not caught up, feel free to join to get a preview of the next chapter or to generally converse about Elixir.</p>
-
-
-        <p>Next Meeting</p>
-        <p>Chapter 4 of Metaprogramming Elixir</p>
+      <div
+        class="
+          mx-auto
+          py-4
+          w-10/12
+          md:w-8/12
+          lg:w-6/12
+          bg-cerise-500
+          rounded-lg
+          flex flex-col
+          justify-center
+        "
+      >
+        <h3 class="text-l text-center text-white mb-2">Next Meeting Topic</h3>
+        <p class="text-xl text-center text-white">
+          Chapter 4 of Metaprogramming Elixir
+        </p>
+      </div>
     </div>
   </body>
 </html>
