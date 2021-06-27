@@ -15,7 +15,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       steel: {
         '50':  '#f3f8f9',
         '100': '#daf0fa',
@@ -136,7 +135,6 @@ module.exports = {
         '800': '#153c3d',
         '900': '#0e252c',
       },
-
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
