@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build:css": "npx postcss assets/tailwind.css -o assets/style.css",
-    "build:prod:css": "NODE_ENV=production yarn run build:css"
+    "build:prod:css": "NODE_ENV=production yarn run build:css",
+    "start": "npx live-server"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",

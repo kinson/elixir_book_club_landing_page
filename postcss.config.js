@@ -8,9 +8,9 @@ module.exports = {
     require("autoprefixer"),
     process.env.NODE_ENV === "production" ? require("autoprefixer") : null,
     process.env.NODE_ENV === "production" ? cssnano({ preset: "default" }) : null,
-    purgecss({
+    process.env.NODE_ENV === 'production' ? purgecss({
       content: ["./index.html"],
       defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-    }),
+    }): null,
   ],
 };
