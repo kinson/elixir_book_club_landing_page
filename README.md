@@ -12,5 +12,9 @@ A simple web page for the Elixir Book Club.
 Whenever you update the `tailwind.js` file to add or adjust a style, you will need to regenerate the `assets/style.css` file by running:
 
 ```zsh
-npx postcss assets/tailwind.css -o assets/style.css
+yarn build:css
+
+# or for production
+
+yarn build:prod:css
 ```
