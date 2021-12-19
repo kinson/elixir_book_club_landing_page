@@ -9,6 +9,7 @@
   "scripts": {
     "build:css": "npx postcss assets/tailwind.css -o assets/style.css",
     "build:prod:css": "NODE_ENV=production yarn run build:css",
+    "deploy": "cp index.html build",
     "start": "npx live-server"
   },
   "devDependencies": {
